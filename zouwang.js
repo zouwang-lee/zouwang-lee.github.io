@@ -20,7 +20,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('|#countdown 3|那么||心仪||你||');
+      S.UI.simulate('|#countdown 3||那么||心仪||你||');
     }
 
     S.Drawing.loop(function () {
