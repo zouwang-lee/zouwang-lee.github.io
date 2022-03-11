@@ -20,7 +20,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('|#countdown 3||祝大家||新年快乐||天天开心||');
+      S.UI.simulate('|#countdown 3|那么|心仪|你|');
     }
 
     S.Drawing.loop(function () {
@@ -40,7 +40,7 @@ S.Drawing = (function () {
                      window.oRequestAnimationFrame      ||
                      window.msRequestAnimationFrame     ||
                      function(callback) {
-                       window.setTimeout(callback, 1000 / 60);
+                       window.setTimeout(callback, 1000 / 30);
                      };
 
   return {
